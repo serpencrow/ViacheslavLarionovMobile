@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Native App Test">
+
+    <test name="native">
+        <groups>
+            <run>
+                <include name="native"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="hw3.Hooks"/>
+            <class name="hw3.nativeApp.NativeAppTest"/>
+        </classes>
+    </test>
+</suite>
