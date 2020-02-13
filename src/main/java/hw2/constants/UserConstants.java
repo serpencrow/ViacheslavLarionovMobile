@@ -1,5 +1,6 @@
 package hw2.constants;
 
-public interface UserConstants {
-    String USER_PROPERTIES_PATH = "src/test/resources/hw2/user.properties";
+public class UserConstants {
+
+    public static final String USER_PROPERTIES_PATH = "src/test/resources/hw2/user.properties";
 }

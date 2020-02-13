@@ -25,6 +25,8 @@ public class DriverSetup {
         capabilities.setCapability(MobileCapabilities.PLATFORM_NAME, PLATFORM);
 
         if (AUT != null && SUT == null) {
+            AUT = System.getProperty("user.dir") + "/" + AUT;
+            System.out.println(AUT);
             capabilities.setCapability(MobileCapabilities.APP, AUT);
         } else if (SUT != null && AUT == null) {
             capabilities.setCapability(MobileCapabilities.BROWSER_NAME, BROWSER);
